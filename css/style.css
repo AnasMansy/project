@@ -1,0 +1,260 @@
+:root {
+    --blue: #00cfe8;
+    --indigo: #6610f2;
+    --purple: #7b70f0;
+    --pink: #e83e8c;
+    --red: #ea5455;
+    --orange: #ff9f43;
+    --yellow: #ffc107;
+    --green: #28c76f;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #b8c2cc;
+    --gray-dark: #1e1e1e;
+    --primary: #7367f0;
+    --secondary: #82868b;
+    --success: #28c76f;
+    --info: #00cfe8;
+    --warning: #ff9f43;
+    --danger: #ea5455;
+    --light: #f6f6f6;
+    --dark: #4b4b4b;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Montserrat",Helvetica,Arial,serif;
+    --font-family-monospace: "Montserrat",Helvetica,Arial,serif;
+}
+*{
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+
+body{
+    background-color: #161d31;
+    text-align: center;
+    font-family: Montserrat,Helvetica,Arial,serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #6e6b7b;
+    position: relative;
+
+}
+
+.container{
+    /*
+    display:grid;
+    grid-template-columns: 290px auto;
+    grid-column-gap:28px ;
+    grid-template-rows: 62px auto 46px;*/
+} 
+
+/*side menu*/
+.side-bar{
+    margin: 0px;
+    height: 100vh;
+    background-color: #283046;
+    position:absolute;
+    width: 290px; ;
+    top: 0; 
+    height: 100%; 
+}
+
+.side-items{
+    display: flex;
+
+
+    justify-content: space-between;
+    position: absolute;
+    font-size: smaller; 
+    width: 100%;
+    height: 63px;
+    top: 0;
+    padding : 4.9px  14px 4.2px 22.9px ; 
+    
+}
+
+
+.logo{ 
+    position: absolute;
+    bottom: 5px;
+    width: 40px;
+    height: 30px;
+}
+.side-header h2{
+    padding-left: 50px;
+    position: absolute;
+    bottom: -20px;
+    
+    
+}
+.side-togle{
+    width: 30px;
+    height: 30px;
+    color:#6610f2 ;
+    
+}
+.dash-bord{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.side-item{
+    display: flex;
+    flex-direction: row;
+    
+}
+.side-container{
+    position:absolute;
+    top: 63px;
+    height: 100%;
+    width: 100%; 
+    
+}
+.dash-bord{
+    margin: 15px 0;
+}
+/*side content*/
+.side-content{
+    display: block; 
+}
+.side-content li{
+    height: 50px;
+    display: flex;
+}
+
+/* main content
+*/
+.sub-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+}
+
+ 
+nav{
+    position: relative;
+    height: 80.586px; 
+    background-color: #161d31;
+    margin-top: 0;
+}
+.nav-{
+    background-color: #283046;
+    height: 70px;
+    margin: 18.2px 28px 0 0;
+    border-radius: 10px;
+}
+nav div{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.nav- ul{
+    padding: 0;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: space-between;  
+}
+.nav- li{
+    margin: 5px;
+}
+.person  a{ 
+    display: flex;  
+}
+
+.person-img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+
+}
+.flag{
+    width: 22px;
+    height:14px;
+}
+.languag{
+    display: flex;
+    justify-content: center;
+}
+.languag h2{ 
+    bottom: 10px;
+}
+/*main content*/
+.main-content{
+    margin: 15px 28px 0 0;
+}
+.address{
+    height: 53px;
+    display: flex;
+    justify-content: space-between; 
+}
+.address-item0 { 
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.address-item0-2{
+    display: flex;
+    justify-content: center;
+    border-left:gray 1px solid ;
+    margin-left: 20px;
+} 
+.address-item0-show{
+    margin-bottom: 5px;
+}
+/*main content product*/
+.main-content-product{
+    display: grid;
+    grid-template-columns:280px auto   ;
+    grid-gap: 30px;
+    outline: red 2px solid;
+    height: fit-content;
+}
+.filter{
+outline: auto;
+}
+.products{
+    outline: auto;
+}
+.products-header-item{
+    display: flex;
+    justify-content: space-between;
+}
+.display{
+    display: flex;
+}
+.features{
+    outline: auto;
+    width: 114px;
+    height: 38px;
+}
+.search{
+    width: 100%;
+    height: 50px;
+}
+.sea{
+    width: 100%;
+    height: 50px;
+    background-color: #283046;
+}
+.products-content{
+    display: grid;
+    grid-template-columns:270px 270px 270px ;
+    grid-template-rows: 370px 370px 370px;
+    grid-column-gap: 30px;
+    grid-row-gap:30px ;
+}
+.product{
+    width: 240;
+    height: 400;
+    outline: red 2px solid ;
+}
